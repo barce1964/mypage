@@ -263,7 +263,7 @@ h1 .text-wrapper:nth-of-type(2) .text{
     background: url(../img/bg/bg2.jpg) center;
 }
 
-.header-about, .header-srv{
+.header-section{
     padding-top: 50px;
     margin: 0 auto;
     text-align: center;
@@ -293,9 +293,11 @@ h1 .text-wrapper:nth-of-type(2) .text{
 
 .srv {
     padding-top: 10px;
+    padding-bottom: 20px;
+    min-width: 580px;
 }
 
-.srv, .info-srv {
+.srv {
     background: url(../img/bg/bg3.jpg) center no-repeat;
 }
 
@@ -466,3 +468,98 @@ h1 .text-wrapper:nth-of-type(2) .text{
     font-weight: 700;
 }
   
+.portfolio {
+    color: #FFFFFF;
+    width: 100%;
+    min-height: 580px;
+    background: url(../img/bg/bg4.jpg) center;
+}
+
+.panels {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    min-height: 280px;
+    padding: 50px 0 50px 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+}
+
+.big-block.claster1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    color: #FFFFFF;
+    width: 100%;
+    min-height: 580px;
+    background: url(../img/bg/bg5.jpg) center;
+}
+
+.contacts-panel {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+    min-height: 280px;
+    padding: 50px 0 50px 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+}
+
+.letter {
+    display: inline-block;
+    width: 200px;
+    height: 280px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
+
+.letter img {
+    height: 100%;
+}
+
+.sender {
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    display: inline-block;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+    border: 3px solid #081447;
+}
+
+.sender form {
+    display: block;
+    margin: 50px;
+}
+
+.tab1 {
+    display: inline-block;
+    left: 50px;
+}
+
+.leter img {
+    height: 100%;
+}
+
+.input-field {
+    margin-top: 10px;
+    height: 30px;
+}
+
+#submit {
+    color: #091e86;
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+#submit:hover {
+    box-shadow: 0px 0px 15px #FF5500;
+}
