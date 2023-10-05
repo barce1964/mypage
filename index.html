@@ -9,18 +9,23 @@
 </head>
 <body>
     <header>
-		<div class="container">
+		<div class="container-header">
 			<nav>
                 <div class="logo">
                     <img src="./img/logo/logo_small.png" alt="logo">
                 </div>
-                <div class="menu">
-                    <ul>
-                        <li class="menu-item"><a href="#aboutme">Обо мне</a></li>
-                        <li class="menu-item"><a href="#services">Услуги</a></li>
-                        <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
-                        <li class="menu-item"><a href="#contacts">Контакты</a></li>
+                <div class="div-menu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#aboutme" class="menu_link">Обо мне</a></li>
+                        <li class="menu-item"><a href="#services" class="menu_link">Услуги</a></li>
+                        <li class="menu-item"><a href="#portfolio" class="menu_link">Портфолио</a></li>
+                        <li class="menu-item"><a href="#contacts" class="menu_link">Контакты</a></li>
                     </ul>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <div class="social">
                     <div class="social-item"><a href="#"><img src="./img/icon/whatsapp.png" alt=""></a></div>
@@ -52,6 +57,12 @@
                 базовая настройка школы
             </p>
             <p class="txt-offer" id="offer2">
+                Подключение платежных систем
+            </p>
+            <!-- <p class="txt-offer" id="offer3">
+                настройка вебинарных комнат
+            </p> -->
+            <p class="txt-offer" id="offer3">
                 верстка лендингов на getcourse и tilda
             </p>
         </section>
@@ -72,18 +83,19 @@
             </div>
         </section>
             
-        <section class="services">
-            <div class="srv" id="services">
+        <section class="serv" id="services">
+            <div class="srv">
                 <div class="header-srv header-section">
                     <p>Услуги</p>
                 </div>
                 <div class="info-srv" >
                     <div class="info-header-srv">
-                        <div class="info-header-tab-srv">Базовая настройка</div>
+                        <div class="info-header-tab-srv info-header-tab-active-srv">Базовая настройка</div>
+                        <div class="info-header-tab-srv">Платежные системы</div>
+                        <!-- <div class="info-header-tab-srv">Вебинарные комнаты</div> -->
                         <div class="info-header-tab-srv">Лендинги</div>
                     </div>
                     <div class="description-srv fade">
-                        <div class="description-title-srv">Базовая настройка</div>
                         <div class="description-text-srv">
                             <p>Регистрация аккаунта на Getcourse (если клиент не имеет зарегистрированного аккаунта).</p>
                             <p>Регистрация домена у любого регистратора на выбор клиента или создание домена третьего уровня, если домен у клиента уже зарегистрирован, и клиент желает использовать его.</p>
@@ -101,7 +113,20 @@
                         </div>
                     </div>
                     <div class="description-srv fade">
-                        <div class="description-title-srv">Лендинги*</div>
+                        <div class="description-text-srv">
+                            <p>Подключение и настройка встроеной платежной системы GetCourse</p>
+                            <p>Подключение и настройка любой платежной системы, поддерживаемой GetCourse</p>
+                            <p>Подключение и настройка онлайн кассы*</p><br>
+                            <p class="blink1">*Если вы решите подключать платежную систему GetCourse, подключать онлайн кассу не надо, т. к. касса встроена в платежную систему GetCourse</p><br>
+                            <p class="price">от 4000 руб.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="description-srv fade">
+                        <div class="description-text-srv">
+
+                        </div>
+                    </div> -->
+                    <div class="description-srv fade">
                         <div class="description-text-srv">
                             <p>Анализ рынка и конкурентов.</p>
                             <p>Разработка макета страницы и согласование его с клиентом.</p>
@@ -119,13 +144,13 @@
             </div>
         </section>
 
-        <section class="portfolio">
-            <div id="portfolio">
+        <section class="portfolio" id="portfolio">
+            <div class="port">
                 <div class="header-port header-section">
                     <p>Портфолио</p>
                 </div>
                 <div class="panels">
-                    <div class="big-block claster1">
+                    <div class="big-block">
                         <div class="block claster1">
                             <a href="https://gc-alex.ru/tech" target="_blank"><img src="./img/Portfolio/school.jpg" alt=""></a>
                         </div>
@@ -136,7 +161,7 @@
     
                         </div>
                     </div>
-                    <div class="big-block claster2">
+                    <div class="big-block">
                         <div class="block claster2">
                             <a href="https://gc-alex.ru/lpwebinar" target="_blank"><img src="./img/Portfolio/lp.jpg" alt=""></a>
                         </div>
@@ -147,7 +172,7 @@
     
                         </div>
                     </div>
-                    <div class="big-block claster3">
+                    <div class="big-block">
                         <div class="block claster3">
     
                         </div>
@@ -174,9 +199,7 @@
                     <p>Контакты</p>
                 </div>
                 <div class="contacts-panel">
-                    <div class="letter">
-                        <img src="./img/pict/letter.png" alt="" class="img1">
-                    </div>
+                    <div class="letter"></div>
                     <div class="sender">
                         <form action="#">
                             <table class="tab1">
